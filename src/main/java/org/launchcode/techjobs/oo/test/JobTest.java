@@ -31,24 +31,11 @@ public class JobTest {
 
         Job job = new Job(jobName, employer, location, pt, cc);
 
-//        org.junit.Assert.assertTrue("Job name is of type String", job.getName() instanceof String);
-//        org.junit.Assert.assertTrue("Job employer is of type Employer", job.getEmployer() instanceof Employer);
-//        org.junit.Assert.assertTrue("Job location is of type Location", job.getLocation() instanceof Location);
-//        org.junit.Assert.assertTrue("Job positionType is of type PositionType", job.getPositionType() instanceof PositionType);
-//        org.junit.Assert.assertTrue("Job coreCompetency is of type CoreCompetency", job.getCoreCompetency() instanceof CoreCompetency);
-
         assertTrue(job.getName() instanceof String);
         assertTrue(job.getEmployer() instanceof Employer);
         assertTrue(job.getLocation() instanceof Location);
         assertTrue(job.getPositionType() instanceof PositionType);
         assertTrue(job.getCoreCompetency() instanceof CoreCompetency);
-
-
-//        org.junit.Assert.assertEquals("Job name is properly set by the constructor", "Product tester", job.getName());
-//        org.junit.Assert.assertEquals("Job Employer is properly set by the constructor", "ACME", job.getEmployer().getValue());
-//        org.junit.Assert.assertEquals("Job Location is properly set by the constructor", "Desert", job.getLocation().getValue());
-//        org.junit.Assert.assertEquals("Job PositionType is properly set by the constructor", "Quality control", job.getPositionType().getValue());
-//        org.junit.Assert.assertEquals("Job CoreCompetency is properly set by the constructor", "Persistence", job.getCoreCompetency().getValue());
 
         assertEquals("Product tester", job.getName());
         assertEquals("ACME", job.getEmployer().getValue());
